@@ -4,7 +4,7 @@ title:      "SOAP and RESTful: Which to choose?"
 subtitle:   "Differences and tips of choosing web services "
 date:       2016-09-13 12:00:00
 author:     "Shengwen"
-header-img: ""
+header-img: "img/home-bg-o.jpg"
 tags:
     - Web Services
     - RESTful
@@ -33,6 +33,7 @@ The SOAP has success or retry logic built in and provides end-to-end reliability
 **How to decide what style of Web Service to use? SOAP WS or REST?**
 
 In general, a REST based Web service is preferred due to its simplicity, performance, scalability, and support for multiple data formats. SOAP is favored where service requires comprehensive support for security and transactional reliability.
+
 The answer really depends on the functional and non-functional requirements. Asking the questions listed below will help you choose.
 - Does the service expose data or business logic? (REST is a better choice for exposing data, SOAP WS might be a better choice for logic).Do the consumers and the service providers require a formal contract? (SOAP has a formal contract via WSDL)
 - Do we need to support multiple data formats?
