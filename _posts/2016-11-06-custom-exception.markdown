@@ -15,7 +15,7 @@ header-img: "img/home-bg.jpg"
 tags:
 
     - ASP.NET
-    - C#
+    - CSharp
 ---
 
 1. Create a class that derives from System.Exception class. As a convention, end the class name with Exception suffix. All .NET exceptions end with,  exception suffix. If you don't do so, you won't get a compiler error, but you will be deviating from the guidelines for creating custom exceptions.
