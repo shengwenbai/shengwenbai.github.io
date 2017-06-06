@@ -20,40 +20,39 @@ tags:
 
 
 
-Create a class that derives from System.Exception class. As a convention, end the class name with Exception suffix. All .NET exceptions end with,  exception suffix. If you don't do so, you won't get a compiler error, but you will be deviating from the guidelines for creating custom exceptions.
+1. Create a class that derives from System.Exception class. As a convention, end the class name with Exception suffix. All .NET exceptions end with,  exception suffix. If you don't do so, you won't get a compiler error, but you will be deviating from the guidelines for creating custom exceptions.
 ```csharp
 public class UserAlreadyLoggedInException: Exception{}
 ```
 
-Provide a public constructor, that takes in a string parameter. This constructor simply passes the string parameter, to the base exception class constructor.
-
+2. Provide a public constructor, that takes in a string parameter. This constructor simply passes the string parameter, to the base exception class constructor.
 ```csharp
-public UserAlreadyLoggedInException(string message): base(message){}
+public UserAlreadyLoggedInException(string message)
+    :base(message){}
 ```
 
-Using InnerExceptions, you can also track back the original exception. If you want to provide this capability for your custom exception class, then overload the constructor as shown below. 
-
+3. Using InnerExceptions, you can also track back the original exception. If you want to provide this capability for your custom exception class, then overload the constructor as shown below. 
 ```csharp
-public UserAlreadyLoggedInException(string message, Exception innerException): base(message, innerException){}
+public UserAlreadyLoggedInException(string message, Exception innerException)
+    :base(message, innerException){}
 ```
 
-If you want your Exception class object to work across application domains, then the object must be serializable. To make your exception class serializable mark it with Serializable attribute and provide a constructor that invokes the base Exception class constructor that takes in SerializationInfo and StreamingContext objects as parameters.
-
+4. If you want your Exception class object to work across application domains, then the object must be serializable. To make your exception class serializable mark it with Serializable attribute and provide a constructor that invokes the base Exception class constructor that takes in SerializationInfo and StreamingContext objects as parameters.
 ```csharp
 [Serializable]
-public class UserAlreadyLoggedInException : Exception
+public class UserAlreadyLoggedInException: Exception
 {
-    public UserAlreadyLoggedInException(string message): base(message)
+    public UserAlreadyLoggedInException(string message): base(message)
     {
     }
 
-    public UserAlreadyLoggedInException(string message, Exception innerException)
-    : base(message, innerException)
+    public UserAlreadyLoggedInException(string message, Exception innerException)
+        :base(message, innerException)
     {
     }
-    
-    public UserAlreadyLoggedInException(SerializationInfo info, StreamingContext context)
-    : base(info, context)
+    
+    public UserAlreadyLoggedInException(SerializationInfo info, StreamingContext context)
+        :base(info, context)
     {
     }
 }
