@@ -81,3 +81,5 @@ Read Committed Snapshot Isolation returns the last committed data before the sel
 
 Snapshot Isolation returns the last committed data before the transaction began and not the last committed data before the select statement began. 
 
+
+Reference: [kudvenkat's YouTube channel](https://www.youtube.com/user/kudvenkat)
