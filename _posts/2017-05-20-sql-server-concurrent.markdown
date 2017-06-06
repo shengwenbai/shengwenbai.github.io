@@ -16,7 +16,7 @@ tags:
 2. [Concurrent Problems](#concurrent-problems)
     1. [Dirty Read](#dirty-read)
     2. [Lost Update](#lost-update)
-    3. [Nonrepeatable Read](#non-repeatable-read)
+    3. [Nonrepeatable Read](#nonrepeatable-read)
     4. [Phantom Read](#phantom-read)
 3. [Difference between repeatable read and serializable](#difference-between-repeatable-read-and-serializable)
 4. [Difference between serializable and snapshot isolation levels](#difference-between-serializable-and-snapshot-isolation-levels)
@@ -37,19 +37,19 @@ tags:
 
 #### Dirty Read
 A dirty read happens when one transaction is permitted to read data that has been modified by another transaction that has not yet been committed. In most cases this would not cause a problem. However, if the first transaction is rolled back after the second reads the data, the second transaction has dirty data that does not exist anymore.
-![](img/in-post/post-concurrent/dirtyread.png)
+![](/img/in-post/post-concurrent/dirtyread.png)
 
 #### Lost Update
 Lost update problem happens when 2 transactions read and update the same data.
-![](img/in-post/post-concurrent/lostupdate.png)
+![](/img/in-post/post-concurrent/lostupdate.png)
 
 #### Nonrepeatable Read
 Non repeatable read problem happens when one transaction reads the same data twice and another transaction updates that data in between the first and second read of transaction one. 
-![](img/in-post/post-concurrent/nonrepeatableread.png)
+![](/img/in-post/post-concurrent/nonrepeatableread.png)
 
 #### Phantom Read
 Phantom read happens when one transaction executes a query twice and it gets a different number of rows in the result set each time. This happens when a second transaction inserts a new row that matches the WHERE clause of the query executed by the first transaction.
-![](img/in-post/post-concurrent/phantomread.png)
+![](/img/in-post/post-concurrent/phantomread.png)
 
 ## Difference between repeatable read and serializable
 Repeatable read prevents only non-repeatable read. Repeatable read isolation level ensures that the data that one transaction has read, will be prevented from being updated or deleted by any other transaction, but it doe not prevent new rows from being inserted by other transactions resulting in phantom read concurrency problem. 
