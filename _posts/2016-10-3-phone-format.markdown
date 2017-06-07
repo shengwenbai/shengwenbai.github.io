@@ -192,5 +192,4 @@ Include the JavaScript below:
 </script>
 ```
 
-[Try it here](http://shengwen.space/phone)
 
