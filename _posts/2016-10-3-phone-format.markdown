@@ -2,7 +2,7 @@
 layout:     post
 title:      "Auto phone format JavaScript implementation"
 subtitle:   "JavaScript code to change the phone number in textbox to (XXX)XXX-XXXX format immediately"
-date:       2016-08-23 12:00:00
+date:       2016-10-03 12:00:00
 author:     "Shengwen"
 header-img: "img/post-bg-js-version.jpg"
 tags:
