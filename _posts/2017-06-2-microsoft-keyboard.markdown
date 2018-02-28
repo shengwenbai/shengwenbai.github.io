@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Set a default name for files that will be downloaded by users"
-subtitle:   ""
+title:      "How to: use the zoom slider to scroll on Microsoft Natural Ergonomic 4000 keyboard"
+subtitle:   "Ergonomic keyboard save your wrist"
 date:       2017-06-02 12:00:00
 author:     "Shengwen"
 header-img: "img/Keyboard.jpg"
