@@ -1,4 +1,4 @@
-# Site settings
+﻿# Site settings
 title: Shengwen Blog
 SEOTitle: Shengwen Blog
 header-img: img/home-bg.jpg
@@ -61,7 +61,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Life is short. Learn more, read more, see more, feel more."
+sidebar-about-description: "Keep eyes on the stars and feet on the ground."
 sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
