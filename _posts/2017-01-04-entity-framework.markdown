@@ -5,6 +5,7 @@ subtitle:   ""
 date:       2017-01-04 12:00:00
 author:     "Shengwen"
 header-img: "img/home-bg-o.jpg"
+catalog: true
 tags:
     - Entity Framework
     - ASP.NET
