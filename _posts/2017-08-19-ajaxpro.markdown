@@ -19,7 +19,7 @@ tags:
 3. Add `AjaxNamespace` attribute on the web form class, register the class in `Page_Load` method, add `AjaxMethod` on the method that will be called in front end;
 
    ```c#
-   	[AjaxNamespace("DefaultSpace")]
+       [AjaxNamespace("DefaultSpace")]
        public partial class _Default : Page
        {
            protected void Page_Load(object sender, EventArgs e)
